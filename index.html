@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="static/unpoly.css" />
+    <link rel="stylesheet" href="static/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/unpoly.js"></script>
+    <script src="static/useFunctions.js"></script>
+  </head>
+  <body>
+    <div id="title">
+      Loom Dashboard
+    </div>
+    <div id="main" class="flex-container">
+      <div id="fields">
+      
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_1" onclick="selectField(1)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_1"> Artificial Intelligence and Machine Learning Methods </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_2" onclick="selectField(2)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_2"> Atmospheric Science </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_3" onclick="selectField(3)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_3"> Ecology and Biodiversity of Animals and Ecosystems </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_4" onclick="selectField(4)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_4"> Ecology and Biodiversity of Plants and Ecosystems </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_5" onclick="selectField(5)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_5"> Image and Language Processing </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_6" onclick="selectField(6)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_6"> Oceanography </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_7" onclick="selectField(7)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_7"> Soil Sciences </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_8" onclick="selectField(8)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_8"> Overall </span>  
+  </div>
+      
+      </div>
+      <div id="overview">
+      <div id="flipper" class="explanation">
+      This is an interactive overview of the TIB Knowledge Loom.
+      Select specific domains (or the Overall field for summary),
+      flip the cards for more context,
+      and download data or code files via
+      <p style="text-align: center;">
+      <a href="final_info.html" up-target="#overview">Detailed Information</a>
+      </p>
+      </div>
+      <div id="flipcards">        
+        <div id="two_cards">
+          <div id="records" up-defer="insert" up-href="back.html"> ... </div>
+          <div id="data" up-defer="insert" up-href="back.html"> ... </div>
+        </div>  
+        <div id="methods" up-defer="insert" up-href="back.html"> ... </div>
+      </div>
+    </div>
+    </div>
+    <div id="contacts">
+    <h3>Contact us blahblah</h3>
+    </div>
+    <!-- HTML here may use Unpoly attributes like [up-follow] -->
+  </body>
+</html>

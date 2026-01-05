@@ -1,0 +1,291 @@
+* {
+  font:
+    16px "Open Sans",
+    sans-serif;
+}
+
+@font-face {
+  font-family: Overload Burn;
+  src: url(/static/overload.burn-regular.otf);
+}
+
+@font-face {
+  font-family: Barlow ExtraBold;
+  src: url(/static/barlow.extrabold.ttf);
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: -50vw;
+  left: -50vh;
+  width: calc(100vw + 100vh);
+  min-height: calc(100vw + 100vh);
+  background-image: url("grid.png");
+  z-index: -1;
+  opacity: 0.5;
+  /*rotate: 30deg;*/
+}
+
+#title {
+text-align: center;
+font: 70px"Barlow ExtraBold";
+letter-spacing: 8px;
+word-spacing: 20px;
+color: #454a52; 
+text-shadow: 4px 4px 8px #5a5b63;
+padding: 10px;
+margin: 20px;
+}
+
+div.flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+
+div.field_box{
+  margin: 5px;
+}
+
+div.explanation {
+  display:inline-block;
+  /* flex:0 0 100%;*/
+  width:50vw; 
+  background-color: #E3E5E6; 
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px; 
+  padding: 10px;
+  text-align: left;
+  font:30px;
+  box-shadow: 5px 5px 2px #5a5b63;    
+}
+
+#flipcards {
+  display:inline-flex;
+  width: min-content;
+  flex-direction: row;
+  padding: 10px;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  #flipcards {
+    flex-direction: column;
+  }
+}
+
+div.two_cards {
+  display:inline-flex;
+  flex-direction: column;
+}
+
+div.card {
+  min-width:30vw;
+  background-color: #E3E5E6; 
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  padding: 10px;
+  box-shadow: 5px 5px 2px #5a5b63;    
+}
+
+#schemata_pic {
+  display:block;
+  width:100%;
+  text-align: center;
+}
+
+/*div.card::after {
+    content: url("arrow.png");
+    position: relative;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}*/
+
+div.count {
+  display:flex;
+  flex-direction: row;
+  font-size: 15px;
+  padding: 10px;  
+}
+
+div.card_name {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px; 
+}
+
+div.flip {
+  font-size:18px;
+  font-weight: bold;
+  text-decoration: underline dotted;
+  margin: 10px;
+}
+div.sch_name {
+  width: 20ch;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+div.row_name {
+  width: 15ch;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+div.num {
+  display:flex;
+  width: 3ch;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 2px;
+  font-size: 15px;  
+}
+
+#fields {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+/* Field button */
+.button {
+  position: relative;
+  right: 20px;
+  z-index: -1;
+  display: inline-block;
+  height: 27px; /* was 34 */
+  padding-right: 6px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  vertical-align: middle;
+  line-height: 27px;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 27px; /* was 34 */
+  vertical-align: middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px; /* was 26 */
+  width: 24px; /* was 26 */
+  border-radius: 10px;
+  left: 4px;
+  bottom: 6px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #7d827d;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#contacts {
+  text-align: center;
+}
+
+div.legend{
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 3px;
+} 
+
+div.field_wrap{
+  display:inline-flex;
+  text-align: left;
+  width: 90vw;
+  flex-direction: column;
+  background-color: #E3E5E6; 
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px #5a5b63; 
+} 
+
+#more {display: none;}
+
+div.info_field {
+  display:inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px;
+}
+div.info_line {
+  display:inline-flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 5px;
+}
+div.record_paper{
+  width: 55%;
+  font-style: italic;
+  margin: 5px;
+}
+
+div.code_files{
+  width: 15%;
+  margin: 5px;
+}
+
+div.data_files{
+ width: 15%;
+ margin: 5px;
+}
+
+div.schemata{
+  width: 15%;
+  margin: 5px;
+}
