@@ -10,10 +10,12 @@
   </head>
   <body>
     <div id="title">
-      <img src="/static/title.png" style="width:auto;height:70px;">
+      <div id="logo"> <!-- important for adding background under the image -->
+        <img src="/static/title.png" style="width:auto;height:70px;">
+      </div>
     </div>
-    <div id="main" class="flex-container">
-      <div id="fields">
+    <div class="v-box">
+      <div id="fields" class="bubble">
       
       
         <div class="field_box">
@@ -48,43 +50,50 @@
   <label class="switch">
     <input type="checkbox" id="field_name_5" onclick="selectField(5)" checked>
     <span class="slider"></span>  
-  </label> <span class="button colour_5"> Image and Language Processing </span>  
+  </label> <span class="button colour_5"> Empirical Social Research </span>  
   </div>
       
         <div class="field_box">
   <label class="switch">
     <input type="checkbox" id="field_name_6" onclick="selectField(6)" checked>
     <span class="slider"></span>  
-  </label> <span class="button colour_6"> Oceanography </span>  
+  </label> <span class="button colour_6"> Image and Language Processing </span>  
   </div>
       
         <div class="field_box">
   <label class="switch">
     <input type="checkbox" id="field_name_7" onclick="selectField(7)" checked>
     <span class="slider"></span>  
-  </label> <span class="button colour_7"> Soil Sciences </span>  
+  </label> <span class="button colour_7"> Oceanography </span>  
   </div>
       
         <div class="field_box">
   <label class="switch">
     <input type="checkbox" id="field_name_8" onclick="selectField(8)" checked>
     <span class="slider"></span>  
-  </label> <span class="button colour_8"> Overall </span>  
+  </label> <span class="button colour_8"> Soil Sciences </span>  
+  </div>
+      
+        <div class="field_box">
+  <label class="switch">
+    <input type="checkbox" id="field_name_9" onclick="selectField(9)" checked>
+    <span class="slider"></span>  
+  </label> <span class="button colour_9"> Overall </span>  
   </div>
       
       </div>
-      <div id="overview">
-      <div id="flipper" class="explanation">
-      This is an interactive overview of the TIB Knowledge Loom.
-      Select specific domains (or the Overall field for summary),
-      flip the cards for more context,
-      and download data or code files via
+      <div id="overview" class="v-box">
+      <div id="explanation" class="bubble">
+      This is an&nbspinteractive overview of&nbspthe&nbspTIB Knowledge Loom.
+      Select specific domains or&nbspthe&nbspOverall field for&nbspsummary,
+      flip the&nbspcards for&nbspmore context (click a&nbspcard anywhere to&nbspflip),
+      and&nbspdownload data or&nbspcode files via
       <p style="text-align: center;">
       <a href="final_info.html" up-target="#overview">Detailed Information</a>
       </p>
       </div>
-      <div id="flipcards">        
-        <div id="two_cards">
+      <div id="flipcards">
+        <div id="two_cards" class="v-box">
           <div id="records" up-defer="insert" up-href="back.html"> ... </div>
           <div id="data" up-defer="insert" up-href="back.html"> ... </div>
         </div>  

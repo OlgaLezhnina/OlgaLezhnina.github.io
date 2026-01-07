@@ -2,342 +2,372 @@
 <html>
   <head>
     <link rel="stylesheet" href="static/unpoly.css" />
+    <link rel="stylesheet" href="static/style.css">
     <script src="static/unpoly.js"></script>
     <script src="https://d3js.org/d3.v4.js"></script>
   </head>
   <body>
     <!-- HTML here may use Unpoly attributes like [up-follow] -->
-    <div up-href="front.html" id="records" class="card" up-target="#records" up-follow>  
+    <div up-href="front.html" id="records" class="card bubble" up-target="#records" up-follow>  
       <div class="card_name">Loom Records</div>
       <div id="pp_count" class="count">
       <div class="row_name">Papers</div> 
       
-        <div id="pp_1" class="num colour_1">3</div>
+        <span id="pp_1" class="num colour_1">3</span>
       
-        <div id="pp_2" class="num colour_2">1</div>
+        <span id="pp_2" class="num colour_2">1</span>
       
-        <div id="pp_3" class="num colour_3">6</div>
+        <span id="pp_3" class="num colour_3">6</span>
       
-        <div id="pp_4" class="num colour_4">6</div>
+        <span id="pp_4" class="num colour_4">6</span>
       
-        <div id="pp_5" class="num colour_5">3</div>
+        <span id="pp_5" class="num colour_5">1</span>
       
-        <div id="pp_6" class="num colour_6">1</div>
+        <span id="pp_6" class="num colour_6">3</span>
       
-        <div id="pp_7" class="num colour_7">1</div>
+        <span id="pp_7" class="num colour_7">1</span>
       
-        <div id="pp_8" class="num colour_8">19</div>
+        <span id="pp_8" class="num colour_8">1</span>
+      
+        <span id="pp_9" class="num colour_9">20</span>
        
       </div>
      <div id="au_count" class="count">
       <div class="row_name">Authors</div> 
       
-        <div id="au_1" class="num colour_1">9</div>
+        <span id="au_1" class="num colour_1">9</span>
       
-        <div id="au_2" class="num colour_2">11</div>
+        <span id="au_2" class="num colour_2">11</span>
       
-        <div id="au_3" class="num colour_3">37</div>
+        <span id="au_3" class="num colour_3">37</span>
       
-        <div id="au_4" class="num colour_4">56</div>
+        <span id="au_4" class="num colour_4">56</span>
       
-        <div id="au_5" class="num colour_5">11</div>
+        <span id="au_5" class="num colour_5">3</span>
       
-        <div id="au_6" class="num colour_6">10</div>
+        <span id="au_6" class="num colour_6">11</span>
       
-        <div id="au_7" class="num colour_7">7</div>
+        <span id="au_7" class="num colour_7">10</span>
       
-        <div id="au_8" class="num colour_8">126</div>
+        <span id="au_8" class="num colour_8">7</span>
+      
+        <span id="au_9" class="num colour_9">129</span>
        
       </div>
        <div id="st_count" class="count">
        <div class="row_name">Statements</div> 
        
-         <div id="st_1" class="num colour_1">10</div>
+         <span id="st_1" class="num colour_1">10</span>
        
-         <div id="st_2" class="num colour_2">18</div>
+         <span id="st_2" class="num colour_2">18</span>
        
-         <div id="st_3" class="num colour_3">47</div>
+         <span id="st_3" class="num colour_3">47</span>
        
-         <div id="st_4" class="num colour_4">47</div>
+         <span id="st_4" class="num colour_4">47</span>
        
-         <div id="st_5" class="num colour_5">24</div>
+         <span id="st_5" class="num colour_5">13</span>
        
-         <div id="st_6" class="num colour_6">3</div>
+         <span id="st_6" class="num colour_6">24</span>
        
-         <div id="st_7" class="num colour_7">6</div>
+         <span id="st_7" class="num colour_7">3</span>
        
-         <div id="st_8" class="num colour_8">150</div>
+         <span id="st_8" class="num colour_8">6</span>
+       
+         <span id="st_9" class="num colour_9">163</span>
         
        </div>
-    <div class="flip">Flip the card</div>
     </div>
-    <div up-href="front.html" id="data" class="card" up-target="#data" up-follow>
+    <div up-href="front.html" id="data" class="card bubble" up-target="#data" up-follow>
       <div class="card_name">Data and Code</div> 
       <div id="csv_count" class="count">
       <div class="row_name">CSV data files</div>
       
-        <div id="csv_1" class="num colour_1">1</div>
+        <span id="csv_1" class="num colour_1">1</span>
       
-        <div id="csv_2" class="num colour_2">1</div>
+        <span id="csv_2" class="num colour_2">1</span>
       
-        <div id="csv_3" class="num colour_3">22</div>
+        <span id="csv_3" class="num colour_3">22</span>
       
-        <div id="csv_4" class="num colour_4">69</div>
+        <span id="csv_4" class="num colour_4">69</span>
       
-        <div id="csv_5" class="num colour_5">8</div>
+        <span id="csv_5" class="num colour_5">78</span>
       
-        <div id="csv_6" class="num colour_6">8</div>
+        <span id="csv_6" class="num colour_6">8</span>
       
-        <div id="csv_7" class="num colour_7">3</div>
+        <span id="csv_7" class="num colour_7">8</span>
       
-        <div id="csv_8" class="num colour_8">112</div>
+        <span id="csv_8" class="num colour_8">3</span>
+      
+        <span id="csv_9" class="num colour_9">190</span>
        
       </div>
      <div id="py_count" class="count">
       <div class="row_name">Python files</div>
       
-        <div id="py_1" class="num colour_1">5</div>
+        <span id="py_1" class="num colour_1">5</span>
       
-        <div id="py_2" class="num colour_2">0</div>
+        <span id="py_2" class="num colour_2">0</span>
       
-        <div id="py_3" class="num colour_3">0</div>
+        <span id="py_3" class="num colour_3">0</span>
       
-        <div id="py_4" class="num colour_4">0</div>
+        <span id="py_4" class="num colour_4">0</span>
       
-        <div id="py_5" class="num colour_5">12</div>
+        <span id="py_5" class="num colour_5">0</span>
       
-        <div id="py_6" class="num colour_6">0</div>
+        <span id="py_6" class="num colour_6">12</span>
       
-        <div id="py_7" class="num colour_7">0</div>
+        <span id="py_7" class="num colour_7">0</span>
       
-        <div id="py_8" class="num colour_8">17</div>
+        <span id="py_8" class="num colour_8">0</span>
+      
+        <span id="py_9" class="num colour_9">17</span>
        
       </div>
       <div id="r_count" class="count">
       <div class="row_name">R files</div>
       
-        <div id="r_1" class="num colour_1">0</div>
+        <span id="r_1" class="num colour_1">0</span>
       
-        <div id="r_2" class="num colour_2">18</div>
+        <span id="r_2" class="num colour_2">18</span>
       
-        <div id="r_3" class="num colour_3">45</div>
+        <span id="r_3" class="num colour_3">45</span>
       
-        <div id="r_4" class="num colour_4">46</div>
+        <span id="r_4" class="num colour_4">46</span>
       
-        <div id="r_5" class="num colour_5">0</div>
+        <span id="r_5" class="num colour_5">7</span>
       
-        <div id="r_6" class="num colour_6">3</div>
+        <span id="r_6" class="num colour_6">0</span>
       
-        <div id="r_7" class="num colour_7">6</div>
+        <span id="r_7" class="num colour_7">3</span>
       
-        <div id="r_8" class="num colour_8">115</div>
+        <span id="r_8" class="num colour_8">6</span>
+      
+        <span id="r_9" class="num colour_9">122</span>
        
       </div>
-    <div class="flip">Flip the card</div>
     </div>
-    <div up-href="front.html" id="methods" class="card" up-target="#methods" up-follow> 
+    <div up-href="front.html" id="methods" class="card bubble" up-target="#methods" up-follow> 
       <div class="card_name">Schemata</div>
       <div id="dp_count" class="count">
       <div class="sch_name">Data Preprocessing</div>
       
-        <div id="dp_1" class="num colour_1">0</div>
+        <span id="dp_1" class="num colour_1">0</span>
       
-        <div id="dp_2" class="num colour_2">0</div>
+        <span id="dp_2" class="num colour_2">0</span>
       
-        <div id="dp_3" class="num colour_3">2</div>
+        <span id="dp_3" class="num colour_3">2</span>
       
-        <div id="dp_4" class="num colour_4">13</div>
+        <span id="dp_4" class="num colour_4">13</span>
       
-        <div id="dp_5" class="num colour_5">0</div>
+        <span id="dp_5" class="num colour_5">4</span>
       
-        <div id="dp_6" class="num colour_6">3</div>
+        <span id="dp_6" class="num colour_6">0</span>
       
-        <div id="dp_7" class="num colour_7">0</div>
+        <span id="dp_7" class="num colour_7">3</span>
       
-        <div id="dp_8" class="num colour_8">15</div>
+        <span id="dp_8" class="num colour_8">0</span>
+      
+        <span id="dp_9" class="num colour_9">19</span>
        
       </div>
       <div id="ds_count" class="count">
       <div class="sch_name">Descriptive Statistics</div>
       
-        <div id="ds_1" class="num colour_1">5</div>
+        <span id="ds_1" class="num colour_1">5</span>
       
-        <div id="ds_2" class="num colour_2">18</div>
+        <span id="ds_2" class="num colour_2">18</span>
       
-        <div id="ds_3" class="num colour_3">8</div>
+        <span id="ds_3" class="num colour_3">8</span>
       
-        <div id="ds_4" class="num colour_4">16</div>
+        <span id="ds_4" class="num colour_4">16</span>
       
-        <div id="ds_5" class="num colour_5">0</div>
+        <span id="ds_5" class="num colour_5">9</span>
       
-        <div id="ds_6" class="num colour_6">2</div>
+        <span id="ds_6" class="num colour_6">0</span>
       
-        <div id="ds_7" class="num colour_7">1</div>
+        <span id="ds_7" class="num colour_7">2</span>
       
-        <div id="ds_8" class="num colour_8">48</div>
+        <span id="ds_8" class="num colour_8">1</span>
+      
+        <span id="ds_9" class="num colour_9">57</span>
        
       </div>
       <div id="ae_count" class="count">
       <div class="sch_name">Algorithm Evaluation</div>
       
-        <div id="ae_1" class="num colour_1">5</div>
+        <span id="ae_1" class="num colour_1">5</span>
       
-        <div id="ae_2" class="num colour_2">0</div>
+        <span id="ae_2" class="num colour_2">0</span>
       
-        <div id="ae_3" class="num colour_3">0</div>
+        <span id="ae_3" class="num colour_3">0</span>
       
-        <div id="ae_4" class="num colour_4">0</div>
+        <span id="ae_4" class="num colour_4">0</span>
       
-        <div id="ae_5" class="num colour_5">24</div>
+        <span id="ae_5" class="num colour_5">0</span>
       
-        <div id="ae_6" class="num colour_6">0</div>
+        <span id="ae_6" class="num colour_6">24</span>
       
-        <div id="ae_7" class="num colour_7">0</div>
+        <span id="ae_7" class="num colour_7">0</span>
       
-        <div id="ae_8" class="num colour_8">27</div>
+        <span id="ae_8" class="num colour_8">0</span>
+      
+        <span id="ae_9" class="num colour_9">27</span>
        
       </div>
       <div id="ma_count" class="count">
       <div class="sch_name">Multilevel Analysis</div>
       
-        <div id="ma_1" class="num colour_1">0</div>
+        <span id="ma_1" class="num colour_1">0</span>
       
-        <div id="ma_2" class="num colour_2">0</div>
+        <span id="ma_2" class="num colour_2">0</span>
       
-        <div id="ma_3" class="num colour_3">4</div>
+        <span id="ma_3" class="num colour_3">4</span>
       
-        <div id="ma_4" class="num colour_4">10</div>
+        <span id="ma_4" class="num colour_4">10</span>
       
-        <div id="ma_5" class="num colour_5">0</div>
+        <span id="ma_5" class="num colour_5">0</span>
       
-        <div id="ma_6" class="num colour_6">2</div>
+        <span id="ma_6" class="num colour_6">0</span>
       
-        <div id="ma_7" class="num colour_7">3</div>
+        <span id="ma_7" class="num colour_7">2</span>
       
-        <div id="ma_8" class="num colour_8">17</div>
+        <span id="ma_8" class="num colour_8">3</span>
+      
+        <span id="ma_9" class="num colour_9">17</span>
        
       </div>
       <div id="ca_count" class="count">
       <div class="sch_name">Correlation Analysis</div>
       
-        <div id="ca_1" class="num colour_1">0</div>
+        <span id="ca_1" class="num colour_1">0</span>
       
-        <div id="ca_2" class="num colour_2">0</div>
+        <span id="ca_2" class="num colour_2">0</span>
       
-        <div id="ca_3" class="num colour_3">1</div>
+        <span id="ca_3" class="num colour_3">1</span>
       
-        <div id="ca_4" class="num colour_4">1</div>
+        <span id="ca_4" class="num colour_4">1</span>
       
-        <div id="ca_5" class="num colour_5">0</div>
+        <span id="ca_5" class="num colour_5">0</span>
       
-        <div id="ca_6" class="num colour_6">0</div>
+        <span id="ca_6" class="num colour_6">0</span>
       
-        <div id="ca_7" class="num colour_7">0</div>
+        <span id="ca_7" class="num colour_7">0</span>
       
-        <div id="ca_8" class="num colour_8">2</div>
+        <span id="ca_8" class="num colour_8">0</span>
+      
+        <span id="ca_9" class="num colour_9">2</span>
        
       </div>      
       <div id="gc_count" class="count">
       <div class="sch_name">Group Comparison</div>
       
-        <div id="gc_1" class="num colour_1">0</div>
+        <span id="gc_1" class="num colour_1">0</span>
       
-        <div id="gc_2" class="num colour_2">0</div>
+        <span id="gc_2" class="num colour_2">0</span>
       
-        <div id="gc_3" class="num colour_3">13</div>
+        <span id="gc_3" class="num colour_3">13</span>
       
-        <div id="gc_4" class="num colour_4">27</div>
+        <span id="gc_4" class="num colour_4">27</span>
       
-        <div id="gc_5" class="num colour_5">0</div>
+        <span id="gc_5" class="num colour_5">0</span>
       
-        <div id="gc_6" class="num colour_6">2</div>
+        <span id="gc_6" class="num colour_6">0</span>
       
-        <div id="gc_7" class="num colour_7">1</div>
+        <span id="gc_7" class="num colour_7">2</span>
       
-        <div id="gc_8" class="num colour_8">41</div>
+        <span id="gc_8" class="num colour_8">1</span>
+      
+        <span id="gc_9" class="num colour_9">41</span>
        
       </div>
       <div id="ra_count" class="count">
       <div class="sch_name">Regression Analysis</div>
       
-        <div id="ra_1" class="num colour_1">0</div>
+        <span id="ra_1" class="num colour_1">0</span>
       
-        <div id="ra_2" class="num colour_2">0</div>
+        <span id="ra_2" class="num colour_2">0</span>
       
-        <div id="ra_3" class="num colour_3">27</div>
+        <span id="ra_3" class="num colour_3">27</span>
       
-        <div id="ra_4" class="num colour_4">38</div>
+        <span id="ra_4" class="num colour_4">38</span>
       
-        <div id="ra_5" class="num colour_5">0</div>
+        <span id="ra_5" class="num colour_5">4</span>
       
-        <div id="ra_6" class="num colour_6">0</div>
+        <span id="ra_6" class="num colour_6">0</span>
       
-        <div id="ra_7" class="num colour_7">0</div>
+        <span id="ra_7" class="num colour_7">0</span>
       
-        <div id="ra_8" class="num colour_8">65</div>
+        <span id="ra_8" class="num colour_8">0</span>
+      
+        <span id="ra_9" class="num colour_9">69</span>
        
       </div>
       <div id="cp_count" class="count">
       <div class="sch_name">Class Prediction</div>
       
-        <div id="cp_1" class="num colour_1">0</div>
+        <span id="cp_1" class="num colour_1">0</span>
       
-        <div id="cp_2" class="num colour_2">0</div>
+        <span id="cp_2" class="num colour_2">0</span>
       
-        <div id="cp_3" class="num colour_3">0</div>
+        <span id="cp_3" class="num colour_3">0</span>
       
-        <div id="cp_4" class="num colour_4">0</div>
+        <span id="cp_4" class="num colour_4">0</span>
       
-        <div id="cp_5" class="num colour_5">0</div>
+        <span id="cp_5" class="num colour_5">0</span>
       
-        <div id="cp_6" class="num colour_6">0</div>
+        <span id="cp_6" class="num colour_6">0</span>
       
-        <div id="cp_7" class="num colour_7">0</div>
+        <span id="cp_7" class="num colour_7">0</span>
       
-        <div id="cp_8" class="num colour_8">0</div>
+        <span id="cp_8" class="num colour_8">0</span>
+      
+        <span id="cp_9" class="num colour_9">0</span>
        
       </div>
       <div id="cd_count" class="count">
       <div class="sch_name">Class Discovery</div>
       
-        <div id="cd_1" class="num colour_1">0</div>
+        <span id="cd_1" class="num colour_1">0</span>
       
-        <div id="cd_2" class="num colour_2">0</div>
+        <span id="cd_2" class="num colour_2">0</span>
       
-        <div id="cd_3" class="num colour_3">0</div>
+        <span id="cd_3" class="num colour_3">0</span>
       
-        <div id="cd_4" class="num colour_4">9</div>
+        <span id="cd_4" class="num colour_4">9</span>
       
-        <div id="cd_5" class="num colour_5">0</div>
+        <span id="cd_5" class="num colour_5">0</span>
       
-        <div id="cd_6" class="num colour_6">0</div>
+        <span id="cd_6" class="num colour_6">0</span>
       
-        <div id="cd_7" class="num colour_7">0</div>
+        <span id="cd_7" class="num colour_7">0</span>
       
-        <div id="cd_8" class="num colour_8">9</div>
+        <span id="cd_8" class="num colour_8">0</span>
+      
+        <span id="cd_9" class="num colour_9">9</span>
        
       </div>
       <div id="fa_count" class="count">
       <div class="sch_name">Factor Analysis</div>
       
-        <div id="fa_1" class="num colour_1">0</div>
+        <span id="fa_1" class="num colour_1">0</span>
       
-        <div id="fa_2" class="num colour_2">0</div>
+        <span id="fa_2" class="num colour_2">0</span>
       
-        <div id="fa_3" class="num colour_3">0</div>
+        <span id="fa_3" class="num colour_3">0</span>
       
-        <div id="fa_4" class="num colour_4">1</div>
+        <span id="fa_4" class="num colour_4">1</span>
       
-        <div id="fa_5" class="num colour_5">0</div>
+        <span id="fa_5" class="num colour_5">0</span>
       
-        <div id="fa_6" class="num colour_6">0</div>
+        <span id="fa_6" class="num colour_6">0</span>
       
-        <div id="fa_7" class="num colour_7">1</div>
+        <span id="fa_7" class="num colour_7">0</span>
       
-        <div id="fa_8" class="num colour_8">2</div>
+        <span id="fa_8" class="num colour_8">1</span>
+      
+        <span id="fa_9" class="num colour_9">2</span>
        
       </div>
-      <div class="flip">Flip the card</div>
     </div>
   </body>
 </html>
