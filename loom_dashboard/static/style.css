@@ -4,15 +4,15 @@
     sans-serif;
 }
 
-@font-face {
-  font-family: Barlow ExtraBold;
-  src: url(/static/barlow.extrabold.ttf);
-}
-
 #logo {
     position: relative;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+#logo > img {
+  width: 624px;
+  height: auto;
 }
 
 #logo::before {
@@ -131,7 +131,7 @@ body::before {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
-  padding: 8px; 
+  padding: 8px;
 }
 
 .count {
@@ -167,16 +167,12 @@ body::before {
   border-radius: 1ch;
 }
 
-/*==============================================================================*/
-/*=== continue from here! ======================================================*/
-/*==============================================================================*/
-
 #fields {
   position: sticky;
   top: 0px;
   z-index:10;
   margin-bottom: 10px;
-  padding: 10px;
+  padding-left: 10px;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -186,7 +182,7 @@ body::before {
 }
 
 /* sliders are labels with invisible checkbox inside,
-   we use ::before and ::after to animate the slider 
+   we use ::before and ::after to animate the slider
    plus the background bit under the slider */
 
 .slider > input {
@@ -252,33 +248,6 @@ body::before {
 
 /* end of slider related code */
 
-#contacts {
-  text-align: center;
-}
-
-div.legend{
-  font-size: 18px;
-  border-radius: 10px;
-  padding: 5px;
-  margin: 3px;
-} 
-
-div.field_wrap{
-  display:inline-flex;
-  text-align: left;
-  width: 90vw;
-  flex-direction: column;
-  background-color: #E3E5E6; 
-  margin-bottom: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px #5a5b63; 
-} 
-
-#more {display: none;}
-
-
 /* a class that disables selecting text; */
 /* used primaraly for <summary> element */
 /* so that "more something" can't be selected when copying text */
@@ -292,38 +261,99 @@ div.field_wrap{
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-div.info_field {
+
+/*==============================================================================*/
+/*=== continue from here! ======================================================*/
+/*==============================================================================*/
+
+
+/*
+.field_wrap is a block with records belonging to one domain
+.legend is the title of the domain
+.info_field is the v-box with records
+.info_line is the singular record (h-box)
+.record_paper is the div for the record name
+.file_listing is the div for csv files, then again for code files
+.code_files is for code files
+.schemata is for the used methods
+*/
+
+.field_wrap{
+  display: flex;
+  text-align: left;
+  width: 90vw;
+  flex-direction: column;
+  background-color: #E3E5E6;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #5a5b63;
+}
+
+.field_wrap details {
+  display: contents;
+}
+
+.field_wrap summary {
+  font-size: 14px;
+}
+
+.legend{
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 3px;
+}
+
+.info_field {
   display:inline-flex;
   flex-direction: column;
   width: 100%;
   margin: 5px;
 }
-div.info_line {
+
+.info_line {
   display:inline-flex;
   flex-direction: row;
   width: 100%;
   margin: 5px;
 }
 
-div.record_paper{
+.record_paper{
   width: 55%;
   font-style: italic;
   margin: 5px;
 }
 
-div.code_files{
+.file_listing{
   width: 15%;
   margin: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  gap: 0px 8px;
 }
 
-div.data_files{
- width: 15%;
- margin: 5px;
+.file_listing > div:first-child {
+  width: 90%;
 }
 
-div.schemata{
+.file_listing a {
+  width: 40%; /* ensures at most 2 code references per line */ 
+}
+
+.file_listing summary {
+  width: 90%;
+}
+
+.schemata{
   width: 15%;
   margin: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  gap: 0px;
 }
 
 /* Use media query and show the flex items vertically if screen width is less than 120 characters */
